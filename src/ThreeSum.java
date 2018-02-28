@@ -65,7 +65,7 @@ public class ThreeSum {
 		List<List<Integer>> result=new ThreeSum().threeSum(nums);
 		for(int i=0;i<result.size();i++)
 		{
-		     System.out.println("ç¬¬"+(i+1)+"ç»„");
+			 System.out.println("µÚ"+(i+1)+"×é");
 		     for(int j=0;j<result.get(i).size();j++)
 		     {
 		    	 System.out.print(result.get(i).get(j)+",");
