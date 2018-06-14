@@ -1,5 +1,5 @@
 
-public class IntegerPalindromNumber2 {
+public class IntegerPalindromNumber_2 {
 	public boolean isPalindrome(int x) {
 		if(x<0)
 			return false;
@@ -21,6 +21,6 @@ public class IntegerPalindromNumber2 {
 	}
 	public static void main(String[] args)
 	{
-		System.out.println(new IntegerPalindromNumber2().isPalindrome(1234));
+		System.out.println(new IntegerPalindromNumber_2().isPalindrome(1234));
 	}
 }

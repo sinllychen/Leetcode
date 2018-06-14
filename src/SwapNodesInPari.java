@@ -27,4 +27,25 @@ public class SwapNodesInPari {
         }
         return head;
     }
+    
+    public ListNode swapPairs2(ListNode head) {
+        if(head==null || head.next == null)
+        	return head;
+        ListNode start = new ListNode(-1);
+        start.next = head;
+        ListNode curNode = start.next;
+        ListNode preNode = start;
+
+        while(curNode!=null && curNode.next !=null)
+        {
+        	ListNode tmp = curNode.next;
+        	curNode.next = tmp.next;
+        	tmp.next = curNode;
+        	preNode.next = tmp;
+        	
+        	preNode = curNode;
+        	curNode = curNode.next;
+        }
+        return start.next;
+    }
 }
